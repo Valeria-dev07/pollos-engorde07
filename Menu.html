@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Gothic&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+     font-family: "Poppins", sans-serif;
+    
+}
+
+header {
+    background:#ecf0f1;
+    padding: 2px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+}
+
+nav ul li {
+    margin-right: 50px;
+}
+
+nav ul li a {
+    color:#1d8348;
+    text-decoration: none;
+    padding: 20px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background:#eafaf1;
+}
+
+.background {
+    background-image: url('https://img.freepik.com/fotos-premium/naturaleza-granja-pollos-campo-golpe-campo-verde-agricultura-libre-sol-agricultura-avicola-sostenibilidad-libertad-grupo-aves-pasto-animales-crecimiento-natural_590464-224768.jpg'); /* Reemplaza 'tu-imagen.jpg' con la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    height: calc(100% - 50px); /* Ajusta el tamaño para no cubrir la barra de menú */
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Negro con 50% de transparencia */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+p {
+    font-size: 1.2em;
+}
+.icono{
+width: 20px;  /* Ajusta el tamaño según necesites */
+height: auto;
+}
+.navar{
+    padding: 20px;
+    text-align: center; /* Centrar contenido */
+}
+@media (max-width: 768px) {
+            .form-container1 {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .form-container1 {
+                padding: 10px;
+            }
+
+            .form-group {
+                font-size: 20px;
+            }
+        }
+</style>
+<body>
+    <header>
+        <nav class="navar">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+                <div class="menu">
+                    <a href="#"><img class="icono" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWSS34bKh5zMMTOhqfaaSUzxAUpGz2_CEdzA&s"> </a>
+                    
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="background">
+        <div class="overlay">
+            <h1>Sistema produccion de pollos</h1>
+            <p>Explora nuestros servicios y descubre más sobre nosotros.</p>
+        </div>
+    </div>
+</body>
+</html>

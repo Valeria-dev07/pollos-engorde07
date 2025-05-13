@@ -1,0 +1,101 @@
+body {
+            background-image: url('https://agriculturaverde.shorthandstories.com/campo/assets/ZcYpoMDFu5/portada-shorthand-750x422.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 70%; /* Ajusta el ancho total */
+
+        }
+        .form-container {
+            width: 50%; /* Ancho de cada formulario */
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            transition:  all .5s ease-out;
+        }
+        .form-container1 {
+            background-color: rgba(0, 0, 0, 0.2); /* Fondo negro transparente */
+            color: white; /* Color del texto en blanco */
+            padding: 60px;
+            border-radius: 10px;
+            width: 100%; /* 100% para que ocupe el ancho disponible */
+            max-width: 400px; /* Ancho máximo del formulario */
+
+            
+        }
+        .form-control{
+        
+           /* border-radius: 20px; /* Ajusta este valor para más o menos redondez */
+           /* padding: 10px; /* Ajusta el padding para el tamaño deseado */
+           /* width: 80%; /* Cambia el ancho según necesites */
+           /* background: transparent;
+           /* margin: auto; /* Centra el input horizontalmente */
+           /* width: 70%; /* Ajusta el ancho */
+
+            padding: 10px;
+            border-radius: 20px;
+            background-color: rgba(0, 0, 0, 0.2);
+            color:wheat;
+            transition: background-color 0.10s, transform 0.3s; /* Efectos de transición */
+        }
+
+        .btn-CrearCuenta{
+            border-radius: 20px; /* Ajusta este valor para más o menos redondez */
+            padding: 5px; /* Ajusta el padding para el tamaño deseado */
+            width: 50%; /* Cambia el ancho según necesites */
+            background-color:#5d6d7e;
+            color: white;
+        }
+
+        .btn-CrearCuenta:hover{
+            background-color:#f1c40f;
+        }
+        
+        .welcome-back {
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        a{
+            border-radius: 20px; /* Ajusta este valor para más o menos redondez */
+            padding: 10px; /* Ajusta el padding para el tamaño deseado */
+            width: 50%; /* Cambia el ancho según necesites */
+            background-color: #f4d03f;
+            color: white;
+        }
+        a:hover{
+            background-color:#f1c40f; /* Color al pasar el mouse */
+        }
+
+        /*------Estilos para los errores del formulario------*/
+        .error {
+            border-color: red; /* Color de borde en caso de error */
+        }
+
+        .error-message {
+            color: rgb(248, 68, 68);
+            font-size: 12px;
+            margin-top: -5px; /* Espacio ajustado para que esté cerca del input */
+            height: 14px; /* Altura fija para no cambiar el layout */
+        }
+
+         @media (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+                align-items: center; /* Centrar elementos */
+            }
+            .welcome-text {
+                margin-right: 0; /* Eliminar margen a la derecha */
+                margin-bottom: 20px; /* Agregar margen inferior */
+                text-align: center; /* Centrar texto en pantallas pequeñas */
+            }
+        }

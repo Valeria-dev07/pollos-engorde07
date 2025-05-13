@@ -1,0 +1,74 @@
+ body {
+            background-image: url('https://agriculturaverde.shorthandstories.com/campo/assets/ZcYpoMDFu5/portada-shorthand-750x422.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .form-container1 {
+            background-color: rgba(0, 0, 0, 0.4); /* Fondo negro transparente */
+            color: white; /* Color del texto en blanco */
+            padding: 60px;
+            border-radius: 10px;
+            width: 100%; /* 100% para que ocupe el ancho disponible */
+            max-width: 400px; /* Ancho máximo del formulario */
+        }
+        .form-control{
+            /*border-radius: 20px; /* Ajusta este valor para más o menos redondez */
+            /*padding: 20px; /* Ajusta el padding para el tamaño deseado */
+            /*background: transparent;
+            /*margin: auto; /* Centra el input horizontalmente */
+            /*width: 90%; /* Ajusta el ancho */
+            padding: 10px;
+            border-radius: 20px;
+            background-color: rgba(0, 0, 0, 0.2);
+            color:wheat;
+            transition: background-color 0.10s, transform 0.3s; /* Efectos de transición */
+        }
+
+        .btn-CrearCuenta{
+        	border-radius: 20px; /* Ajusta este valor para más o menos redondez */
+            padding: 5px; /* Ajusta el padding para el tamaño deseado */
+            width: 50%; /* Cambia el ancho según necesites */
+            background-color:#f7dc6f;
+            color: white;
+        }
+
+        .btn-CrearCuenta:hover{
+            background-color:#f1c40f ;
+            color: white;
+        }
+        .welcome-back {
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        .mensaje-error{
+                color: #f1c40f;
+                font-size: 14px;
+                margin-top: -5px; /* Espacio ajustado para que esté cerca del input */
+                height: 14px; /* Altura fija para no cambiar el layout */
+        }
+        .OlvidoContraseña{
+            color: #f7dc6f;
+        }
+
+         @media (max-width: 768px) {
+            .form-container1 {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .form-container1 {
+                padding: 10px;
+            }
+
+            .form-group {
+                font-size: 20px;
+            }
+        }
